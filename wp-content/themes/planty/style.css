@@ -17,24 +17,31 @@ Version: 1.0
 }
 
 /* Lien de navigation */
-#menu-principal li {
+#menu-principal #menu-item-35 {
     padding-right: 60px;
 }
 
 /* Lien "nous rencontrer" */
+#menu-principal #menu-item-35 .menu-link {
+    display: inline-block;
+    position: relative;
+}
+
 #menu-principal #menu-item-35 .text-wrap {
     color: #000000;
+    display: inline-block;
+    transition: transform 0.3 ease;
 }
 
 #menu-principal #menu-item-35 .text-wrap:hover {
 font-size: 13px;
 font-weight: 700;
+transform: translate(10px, -2px);
 }
 
 /* Lien "commander" */
 
 #menu-principal #menu-item-34 {
-    padding-left: 60px;
     background-color: #DC9F96;
 }
 
@@ -45,5 +52,16 @@ font-weight: 700;
 #menu-principal #menu-item-34 .menu-link {
     font-weight: 700;
     color: #ffffff;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
+/* FOOTER */
+/* Menu footer */
+.menu-menu-footer-container {
+    text-align: center;
+}
+
+#footer #footer-bottom #footer-bottom-menu {
+    width: 100%;
+}
