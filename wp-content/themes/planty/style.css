@@ -21,6 +21,11 @@ Version: 1.0
     padding-right: 60px;
 }
 
+/* ici on enlève la bordure sur les liens du header au moment du clique */
+#site-header-inner a {
+    outline: none !important;
+}
+
 /* Lien "nous rencontrer" */
 #menu-principal #menu-item-35 .menu-link {
     display: inline-block;
@@ -60,6 +65,11 @@ transform: translate(10px, -2px);
 /* Menu footer */
 .menu-menu-footer-container {
     text-align: center;
+}
+
+/* ici on enlève la bordure sur le lien du footer au moment du clique */
+.menu-menu-footer-container a {
+    outline: none !important;
 }
 
 #footer #footer-bottom #footer-bottom-menu {
