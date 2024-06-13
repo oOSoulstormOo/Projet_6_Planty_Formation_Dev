@@ -12,3 +12,38 @@ Version: 1.0
 
 /** HEADER **/
 /* Logo */
+#site-logo {
+    margin-left: 38px;
+}
+
+/* Lien de navigation */
+#menu-principal li {
+    padding-right: 60px;
+}
+
+/* Lien "nous rencontrer" */
+#menu-principal #menu-item-35 .text-wrap {
+    color: #000000;
+}
+
+#menu-principal #menu-item-35 .text-wrap:hover {
+font-size: 13px;
+font-weight: 700;
+}
+
+/* Lien "commander" */
+
+#menu-principal #menu-item-34 {
+    padding-left: 60px;
+    background-color: #DC9F96;
+}
+
+#menu-principal #menu-item-34:hover {
+    background-color: #C02E44;
+}
+
+#menu-principal #menu-item-34 .menu-link {
+    font-weight: 700;
+    color: #ffffff;
+}
+
