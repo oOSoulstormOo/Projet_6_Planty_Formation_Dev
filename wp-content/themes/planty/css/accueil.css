@@ -1,0 +1,40 @@
+/* Style CSS de la page d'accueil */
+.accueil-h1 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* Section image canette et plante */
+.container-columns {
+    position: relative;
+}
+
+.columns-flowers {
+    position: relative;
+    top: 32px;
+}
+
+.column-flower-1 {
+    left: 42px;
+}
+
+.column-flower-2 {
+    right: 52px;
+}
+
+.middle-column-canette {
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+
+/* MEDIA RESPONSIVE */
+
+/* Titre H1 */
+
+/* Section image canette et plante */
+
+
+
+
