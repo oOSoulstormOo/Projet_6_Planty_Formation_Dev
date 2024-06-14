@@ -31,6 +31,28 @@
     margin-top: 4px;
 }
 
+/* Section 3 avec image des goûts */
+.accueil-section-3 h2 {
+    margin: 0;
+}
+
+.accueil-section-3 p {
+    margin-top: -15px;
+}
+
+/* Colonnes d'images *//* encadrée centré */
+.first-colonne-section-3 {
+    max-width: 817px;
+    gap: 30px;
+    margin-top: 7px;
+}
+
+/*  on enlève l'effet de transition des images pour obtenir un titre en superposition sans effet */
+/* image fraise */
+.wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
+    transition: none;
+    transform: none;
+}
 
 /* MEDIA RESPONSIVE */
 
