@@ -3,7 +3,7 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-/* Section image canette et plante */
+/* Section 1 avec image canette et plante */
 .container-columns {
     position: relative;
 }
@@ -26,7 +26,10 @@
     z-index: 1;
 }
 
-
+/* Section 2 avec titre et paragraphe */
+.accueil-section-2 p {
+    margin-top: 4px;
+}
 
 
 /* MEDIA RESPONSIVE */
