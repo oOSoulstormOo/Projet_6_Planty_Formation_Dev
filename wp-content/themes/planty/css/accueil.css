@@ -1,9 +1,9 @@
-/* Style CSS de la page d'accueil */
+/**** Style CSS de la page d'accueil ****/
 .accueil-h1 {
     margin-left: 10px;
     margin-right: 10px;
 }
-/* Section 1 avec image canette et plante */
+/*** Section 1 avec image canette et plante ***/
 .container-columns {
     position: relative;
 }
@@ -26,12 +26,12 @@
     z-index: 1;
 }
 
-/* Section 2 avec titre et paragraphe */
+/*** Section 2 avec titre et paragraphe ***/
 .accueil-section-2 p {
     margin-top: 4px;
 }
 
-/* Section 3 avec image des goûts */
+/*** Section 3 avec image des goûts ***/
 .accueil-section-3 h2 {
     margin: 0;
 }
@@ -47,19 +47,48 @@
     margin-top: 7px;
 }
 
+.seconde-colonne-section-3 {
+    max-width: 817px;
+    gap: 30px;
+    margin-top: 20px;
+}
+
 /*  on enlève l'effet de transition des images pour obtenir un titre en superposition sans effet */
-/* image fraise */
 .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
     transition: none;
     transform: none;
 }
 
-/* MEDIA RESPONSIVE */
+
+/*** MEDIA RESPONSIVE ***/
 
 /* Titre H1 */
 
-/* Section image canette et plante */
+/** Section image canette et plante **/
 
+/** Section 3 avec image des goûts **/
+/* Colonnes d'images *//* encadrée centré */
+@media screen and (max-width: 420px) {
+    .first-colonne-section-3 {
+    max-width: 80%;
+    gap: 20px;
+    margin-top: 7px;
+    }   
+    .seconde-colonne-section-3 {
+        max-width: 80%;
+        gap: 20px;
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .uagb-block-b4080ed1.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading,
+    .uagb-block-a888b87a.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading,
+    .uagb-block-2cb383ac.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading,
+    .uagb-block-4662af85.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
+        font-size: 3rem;
+    }
+}
 
 
 

@@ -61,6 +61,12 @@ transform: translate(10px, -2px);
     padding-right: 60px;
 }
 
+/** BUTTON **/
+.wp-block-uagb-buttons .uagb-block-179ae7f8 .uagb-buttons-repeater.wp-block-button__link {
+    width: 198px;
+    height: 55px;
+}
+
 /** FOOTER **/
 /* Menu footer */
 .menu-menu-footer-container {
