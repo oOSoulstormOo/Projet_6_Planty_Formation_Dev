@@ -60,23 +60,6 @@
 }
 
 /*** Section 4 "Ce qu'ils en pensent" ***/
-/* Conteneur en colonne */
-    .container-columns {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 70px;
-        margin-top: 40px;
-    }
-
-    .contenair-first-colonne-section-4 {
-        max-width: 345px;
-    }
-
-    .other-container-colonne-section-4 {
-        max-width: 343px;
-    }
-
 /* contenu et nom des commentaires */
 
 .name-comment {
@@ -98,7 +81,7 @@
 
 /** Section image canette et plante **/
 
-/** Section 3 avec image des goûts **/
+/** Section 3 "Les goûts" avec image des goûts **/
 /* Colonnes d'images *//* encadrée centré */
 @media screen and (max-width: 420px) {
     .first-colonne-section-3 {
@@ -121,6 +104,22 @@
         font-size: 3rem;
     }
 }
+
+/** Section 4 "Ce qu'ils en pensent" **/
+/* contenu et nom des commentaires */
+@media only screen and (max-width:420px) {
+    .name-comment {
+    font-size: 26px;
+    margin: 0;
+    }
+
+    .content-comment {
+    font-size: 14px;
+    margin: 0;
+    }
+}
+
+    
 
 
 
