@@ -1,29 +1,11 @@
 /**** Style CSS de la page d'accueil ****/
-.accueil-h1 {
-    margin-left: 10px;
-    margin-right: 10px;
-}
 /*** Section 1 "Boisson énergisante" avec image canette et plante ***/
-.container-columns {
-    position: relative;
+.conteneur-image-plante-left {
+    transform: translate(53.5%, 5%);
 }
 
-.columns-flowers {
-    position: relative;
-    top: 32px;
-}
-
-.column-flower-1 {
-    left: 42px;
-}
-
-.column-flower-2 {
-    right: 52px;
-}
-
-.middle-column-canette {
-    position: absolute;
-    z-index: 1;
+.conteneur-image-plante-right {
+    transform: translate(-57%, 5%);
 }
 
 /*** Section 2 "L'énergie des plantes" avec titre et paragraphe ***/
@@ -72,18 +54,29 @@
     margin: 0;
 }
 
-/* image */
-
-
+/*** Bannière d'image fin de page ***/
+.bannière-image-avant-footer {
+    width: 100%;
+}
+/*----------------------*/
 /*** MEDIA RESPONSIVE ***/
+/*----------------------*/
 
 /* Titre H1 */
 
 /** Section image canette et plante **/
 
+/** Section 2 "l'énergie des plantes **/
+@media screen and (max-width: 480px) {
+    .accueil-section-2 h3 {
+    margin: 0px;
+}
+}
+
+
 /** Section 3 "Les goûts" avec image des goûts **/
 /* Colonnes d'images *//* encadrée centré */
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
     .first-colonne-section-3 {
     max-width: 80%;
     gap: 20px;
@@ -107,7 +100,7 @@
 
 /** Section 4 "Ce qu'ils en pensent" **/
 /* contenu et nom des commentaires */
-@media only screen and (max-width:420px) {
+@media only screen and (max-width:480px) {
     .name-comment {
     font-size: 26px;
     margin: 0;

@@ -13,12 +13,25 @@ Version: 1.0
 /** HEADER **/
 /* Logo */
 #site-logo {
-    margin-left: 38px;
+    margin-left: 37px;
+}
+
+#site-logo a:hover { /* trouver le pourquoi du comment */
+
 }
 
 /* Lien de navigation */
 #menu-principal #menu-item-35 {
     padding-right: 60px;
+}
+
+#site-navigation-wrap .dropdown-menu >li >a {
+    line-height: 80px;
+    height: 80px;
+}
+
+#site-navigation-wrap {
+    right: 0;
 }
 
 /* ici on enlève la bordure sur les liens du header au moment du clique */
@@ -80,6 +93,7 @@ transform: translate(10px, -2px);
 
 #footer #footer-bottom #footer-bottom-menu {
     width: 100%;
+    padding-left: 0 !important;
 }
 
 /** HEADER RESPONSIVE **/
@@ -132,4 +146,5 @@ transform: translate(10px, -2px);
     #menu-principal #menu-item-35 .text-wrap:hover {
         transform: translate(0px, -5px);
         }
+
 }
