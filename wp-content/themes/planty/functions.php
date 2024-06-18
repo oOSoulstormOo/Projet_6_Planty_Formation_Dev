@@ -28,6 +28,7 @@ function oceanwp_child_enqueue_parent_style() {
 	// Load the stylesheet.
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'oceanwp-style' ), $version );
 	wp_enqueue_style( 'home-child-style', get_stylesheet_directory_uri() . '/css/accueil.css', array( 'oceanwp-style' ), $version );
+	wp_enqueue_style( 'contact-child-style', get_stylesheet_directory_uri() . '/css/nous-rencontrer.css', array( 'oceanwp-style' ), $version );
 	
 }
 

@@ -1,5 +1,8 @@
+/****--------------------------------****/
 /**** Style CSS de la page d'accueil ****/
-/*** Section 1 "Boisson énergisante" avec image canette et plante ***/
+/****--------------------------------****/
+
+/***----- Section 1 "Boisson énergisante" avec image canette et plante -----***/
 .conteneur-image-plante-left {
     transform: translate(53.5%, 5%);
 }
@@ -8,12 +11,12 @@
     transform: translate(-57%, 5%);
 }
 
-/*** Section 2 "L'énergie des plantes" avec titre et paragraphe ***/
+/***----- Section 2 "L'énergie des plantes" avec titre et paragraphe -----***/
 .accueil-section-2 p {
     margin-top: 4px;
 }
 
-/*** Section 3 "Les goûts" avec image des goûts ***/
+/***----- Section 3 "Les goûts" avec image des goûts -----***/
 .accueil-section-3 h2 {
     margin: 0;
 }
@@ -41,7 +44,7 @@
     transform: none;
 }
 
-/*** Section 4 "Ce qu'ils en pensent" ***/
+/***----- Section 4 "Ce qu'ils en pensent" -----***/
 /* contenu et nom des commentaires */
 
 .name-comment {
@@ -54,27 +57,18 @@
     margin: 0;
 }
 
-/*** Bannière d'image fin de page ***/
-.bannière-image-avant-footer {
-    width: 100%;
-}
 /*----------------------*/
 /*** MEDIA RESPONSIVE ***/
 /*----------------------*/
 
-/* Titre H1 */
-
-/** Section image canette et plante **/
-
-/** Section 2 "l'énergie des plantes **/
+/**----- Section 2 "l'énergie des plantes -----**/
 @media screen and (max-width: 480px) {
     .accueil-section-2 h3 {
     margin: 0px;
 }
 }
 
-
-/** Section 3 "Les goûts" avec image des goûts **/
+/**----- Section 3 "Les goûts" avec image des goûts -----**/
 /* Colonnes d'images *//* encadrée centré */
 @media screen and (max-width: 480px) {
     .first-colonne-section-3 {
@@ -98,7 +92,7 @@
     }
 }
 
-/** Section 4 "Ce qu'ils en pensent" **/
+/**----- Section 4 "Ce qu'ils en pensent" -----**/
 /* contenu et nom des commentaires */
 @media only screen and (max-width:480px) {
     .name-comment {
@@ -109,6 +103,13 @@
     .content-comment {
     font-size: 14px;
     margin: 0;
+    }
+}
+
+/* banniere de la section 4 */
+@media only screen and (max-width: 480px) {
+    .wp-block-uagb-container.uagb-block-9e56b6ed {
+        margin-top: 0px !important;
     }
 }
 

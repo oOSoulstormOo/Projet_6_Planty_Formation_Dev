@@ -1,0 +1,23 @@
+/****----------------------------------------****/
+/**** Style CSS de la page "Nous rencontrer" ****/
+/****----------------------------------------****/
+
+/***----- Section 1 "Nous rencontrer" avec titre, texte et image de fond -----***/
+
+/* marge sous le texte qui se supprime */
+.wp-block-uagb-container.uagb-is-root-container .uagb-block-0d556c57 p {
+    margin: 0;
+}
+
+/***----- Section 2 "l'équipe" avec titre, image avec nom et descritpion et image de fond -----***/
+
+/***------------------***/
+/*** MEDIA RESPONSIVE ***/
+/***------------------***/
+@media only screen and (max-width:480px) {
+    .wp-block-uagb-container.uagb-is-root-container .uagb-block-0d556c57 {
+        width: 310px;
+        margin-top: 40px !important;
+    }
+}
+
