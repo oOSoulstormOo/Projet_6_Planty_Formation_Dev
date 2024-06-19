@@ -10,6 +10,16 @@
 }
 
 /***----- Section 2 "l'équipe" avec titre, image avec nom et descritpion et image de fond -----***/
+.section-2-title {
+    margin: 0;
+}
+
+.container-team p {
+    margin: 0 !important;
+}
+
+/***----- Section 3 "Nous contacter" avec titre et formulaire de contact -----***/
+
 
 /***------------------***/
 /*** MEDIA RESPONSIVE ***/
