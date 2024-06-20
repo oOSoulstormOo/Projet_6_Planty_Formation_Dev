@@ -20,6 +20,45 @@
 
 /***----- Section 3 "Nous contacter" avec titre et formulaire de contact -----***/
 
+/* Formulaire */
+.container-form p {
+    margin-bottom: 23px;
+}
+.container-form .your-name,
+.container-form .your-email {
+    height: 71px;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+    margin-top: 13px;
+    font-size: 20px;
+}
+
+.container-form .your-message {
+    height: 237px;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+    margin-top: 13px;
+    font-size: 20px;
+}
+
+.container-form input[type="submit"] {
+    height: 55px;
+    width: 198px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.container-form .btn-envoyer p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /***------------------***/
 /*** MEDIA RESPONSIVE ***/
@@ -31,3 +70,27 @@
     }
 }
 
+/* Formulaire sur mobile */
+@media only screen and (max-width:480px) {
+    .wp-block-uagb-container .container-background-form {
+        width: 320px !important;
+        background-size: 110px !important;
+        background-position: 0% 76% !important;
+    }
+    .wp-block-uagb-container .container-form {
+        width: 220px !important;
+        margin-top: 10px !important;
+    }
+
+    .container-form .your-name,
+    .container-form .your-email {
+        height: 41px;
+        font-size: 16px;
+    }
+
+    .container-form .your-message {
+        height: 150px;
+        margin-top: 13px;
+        font-size: 16px;
+    }
+}

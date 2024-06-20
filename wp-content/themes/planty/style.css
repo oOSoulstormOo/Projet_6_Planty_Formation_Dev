@@ -22,12 +22,13 @@ Version: 1.0
 
 /* Lien de navigation */
 #menu-principal #menu-item-35 {
-    padding-right: 60px;
+    padding-right: 75px;
 }
 
 #site-navigation-wrap .dropdown-menu >li >a {
     line-height: 80px;
     height: 80px;
+    padding: 0;
 }
 
 #site-navigation-wrap {
@@ -43,6 +44,16 @@ Version: 1.0
 #menu-principal #menu-item-35 .menu-link {
     display: inline-block;
     position: relative;
+}
+
+#menu-principal #menu-item-35 #menu-link:target {
+    .text-wrap {
+        color: #000000;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 700;
+        transform: translate(10px, -2px);
+    }
 }
 
 #menu-principal #menu-item-35 .text-wrap {
