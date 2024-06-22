@@ -38,12 +38,6 @@
     margin-top: 20px;
 }
 
-/*  on enlève l'effet de transition des images pour obtenir un titre en superposition sans effet */
-.wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
-    transition: none;
-    transform: none;
-}
-
 /***----- Section 4 "Ce qu'ils en pensent" -----***/
 /* contenu et nom des commentaires */
 
@@ -80,15 +74,6 @@
         max-width: 80%;
         gap: 20px;
         margin-top: 0px;
-    }
-}
-
-@media only screen and (max-width: 420px) {
-    .uagb-block-b4080ed1.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading,
-    .uagb-block-a888b87a.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading,
-    .uagb-block-2cb383ac.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading,
-    .uagb-block-4662af85.wp-block-uagb-image--layout-overlay .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
-        font-size: 3rem;
     }
 }
 
