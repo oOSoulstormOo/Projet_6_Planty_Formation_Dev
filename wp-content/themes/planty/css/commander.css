@@ -1,0 +1,198 @@
+/****----------------------------------------****/
+/**** Style CSS de la page "Commander" ****/
+/****----------------------------------------****/
+
+/*** FORMULAIRE DE COMMANDE ***/
+
+/* S'appliquant dans tout le formulaire */
+#wpcf7-f834-p28-o1 label {
+    color: #fff;
+}
+
+#wpcf7-f834-p28-o1 h2 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+/* conteneur des quantités */
+.container-number {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    margin-top: 13px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.container-number .number-command {
+    width: 210px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-number .number-command input[type="text"] {
+    width: 39px;
+    height: 56px;
+    background-color: white;
+    border: none;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family: 'Inter';
+    text-align: center;
+}
+
+/* conteneur des infos général et de livraison */
+.container-info-and-command {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.container-info-and-command hr {        /* separateur a l'interieur de ce conteneur */
+    margin: 0;
+    border: 1px solid #fff;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    min-height: 451px;
+    margin-right: 45px;
+    margin-left: 45px;
+}
+
+.container-info-and-command p {         /* Tout les bloc a l'intérieur de ce conteneur */
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+
+/* info général */
+.container-info .your-name-1,
+.container-info .your-first-name,
+.container-info .your-email-1 {
+    height: 71px;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+    margin-top: 13px;
+    font-size: 20px;
+}
+
+/* Info de livraison */
+.container-command .your-location,
+.container-command .your-zip-code,
+.container-command .your-city {
+    height: 71px;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+    margin-top: 13px;
+    font-size: 20px;
+}
+
+/* Bouton */
+
+.btn-envoyer input[type="submit"] {
+    height: 55px;
+    width: 198px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.btn-envoyer p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-envoyer {
+    margin-bottom: 70px;
+}
+
+/*** Media Responsive ***/ /* De 481px a 976px */
+/* Formulaire */
+
+@media screen and (max-width: 976px) {
+    .container-info-and-command hr {        /* separateur a l'interieur de ce conteneur */
+        margin: 0;
+        border: 1px solid #fff;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        min-height: 451px;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+}
+
+/* conteneur des quantité */
+@media screen and (max-width: 767px) {
+    .container-number {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+        row-gap: 135px;
+        margin-top: -620px;
+    }
+    
+    .container-number .number-command {
+        width: 210px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* conteneur des infos général et de livraison */
+    .container-info-and-command {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    }
+
+    .container-info-and-command hr {        /* separateur a l'interieur de ce conteneur */
+    margin: 0;
+    border-top: 1px solid #fff;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    min-height: 1px;
+    height: 1px;
+    width: 60%;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 20px;
+    }
+
+    .container-info-and-command p {         /* Tout les bloc a l'intérieur de ce conteneur */
+    margin-top: 25px;
+    margin-bottom: 30px;
+    }
+}
+
+/* Mobile (sous 480px) */
+@media screen and (max-width:480px) {
+    .wp-block-uagb-container.uagb-is-root-container .uagb-block-2e690548 {
+        width: 280px;
+    }
+
+    #wpcf7-f834-p28-o1 h2 {
+        text-align: center;
+    }
+
+    .wp-block-uagb-container.uagb-is-root-container .uagb-block-b0a0df7b h2 {
+        text-align: center;
+    }
+
+    .h1-page-commande {
+        font-size: 24px !important;
+    }
+}

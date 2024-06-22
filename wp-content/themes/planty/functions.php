@@ -29,7 +29,7 @@ function oceanwp_child_enqueue_parent_style() {
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'oceanwp-style' ), $version );
 	wp_enqueue_style( 'home-child-style', get_stylesheet_directory_uri() . '/css/accueil.css', array( 'oceanwp-style' ), $version );
 	wp_enqueue_style( 'contact-child-style', get_stylesheet_directory_uri() . '/css/nous-rencontrer.css', array( 'oceanwp-style' ), $version );
-	wp_enqueue_style( 'command-child-style', get_stylesheet_directory_uri() . '/css/command.css', array( 'oceanwp-style' ), $version );
+	wp_enqueue_style( 'command-child-style', get_stylesheet_directory_uri() . '/css/commander.css', array( 'oceanwp-style' ), $version );
 }
 
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
