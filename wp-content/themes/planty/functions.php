@@ -45,7 +45,7 @@ function add_admin_link($items, $args)
 		$args->theme_location == 'Principal';
 
         // Créez le lien "Admin"
-        $admin_link = '<li class="admin-link"><a href="' . admin_url() . '">Admin</a></li>';
+        $admin_link = '<li class="admin-link"><a href="' . admin_url() . '" class="menu-link"><span class="text-wrap">Admin</span></a></li>';
 
         // Trouvez la position du lien "Nous rencontrer"
         $meet_us_position = strpos($items, 'Nous rencontrer');

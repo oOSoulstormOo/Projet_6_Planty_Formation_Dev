@@ -22,7 +22,7 @@ Version: 1.0
 
 /* Lien de navigation */
 #menu-principal #menu-item-35 {
-    padding-right: 75px;
+    margin-right: 75px;
 }
 
 #site-navigation-wrap .dropdown-menu >li >a {
@@ -46,16 +46,6 @@ Version: 1.0
     position: relative;
 }
 
-#menu-principal #menu-item-35 #menu-link:target {
-    .text-wrap {
-        color: #000000;
-        display: inline-block;
-        font-size: 13px;
-        font-weight: 700;
-        transform: translate(10px, -2px);
-    }
-}
-
 #menu-principal #menu-item-35 .text-wrap {
     color: #000000;
     display: inline-block;
@@ -66,6 +56,24 @@ Version: 1.0
 font-size: 13px;
 font-weight: 700;
 transform: translate(10px, -2px);
+}
+
+/* Lien Admin */
+#menu-principal .admin-link {
+    margin-right: 75px !important;
+    width: 60px;
+} 
+
+#menu-principal .admin-link .text-wrap {
+    color: #000000;
+    display: inline-block;
+    transition: transform 0.3 ease;
+}
+
+#menu-principal .admin-link .text-wrap:hover {
+    font-size: 13px;
+    font-weight: 700;
+    transform: translate(10px, -2px);
 }
 
 /* Lien "commander" */
