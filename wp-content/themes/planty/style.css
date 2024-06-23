@@ -16,10 +16,6 @@ Version: 1.0
     margin-left: 37px;
 }
 
-#site-logo a:hover { /* trouver le pourquoi du comment */
-
-}
-
 /* Lien de navigation */
 #menu-principal #menu-item-35 {
     margin-right: 75px;
@@ -114,54 +110,42 @@ transform: translate(10px, -2px);
 }
 
 /** HEADER RESPONSIVE **/
-/* Media Header en dessous de 704px */
-@media screen and (max-width: 704px) {
+/* Mobile header */
+/* Media Header en dessous de 976px */
+    .oceanwp-text,
+    .oceanwp-close-text {
+    color: #000000;
+    }
+
+    #mobile-dropdown .menu-item-34 a {
+        background-color: #DC9F96;
+        color: #ffffff;
+        font-weight: 700;
+    }
+
+    #mobile-dropdown .menu-item-34 a:hover {
+        background-color: #C02E44;
+    }
+
+    #mobile-dropdown ul .menu-item-34 {
+        border-bottom: none !important;
+    }
+
+
+    #mobile-dropdown ul li a:focus {
+        outline: none !important;
+    }
+
+@media screen and (max-width: 767px) {
     #site-logo {
-        margin-left: 0px;
-        justify-content: center;
-        align-items: center;
+        margin-left: 10px;
     }
 
-    #site-header #site-header-inner {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #menu-principal #menu-item-35 {
-        padding-right: 40px;
-    }
-
-    #site-navigation-wrap {
-        margin-top: 30px;
-    }
-
-    #menu-principal #menu-item-34 .menu-link {
-        padding-left: 40px;
-        padding-right: 40px;
+    #mobile-dropdown ul li a {
+        padding: 12px 0px 12px 10px;
     }
 }
-
 /* Media Header en dessous de 480px */
 @media screen and (max-width: 480px) {
-        #menu-principal {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-    }
-
-    #site-navigation-wrap {
-        margin-top: 0px;
-    }
-
-    #menu-principal #menu-item-35 {
-        padding-right: 30px;
-        padding-left: 30px;
-    }
-
-    #menu-principal #menu-item-35 .text-wrap:hover {
-        transform: translate(0px, -5px);
-        }
-
+   
 }
