@@ -145,7 +145,3 @@ transform: translate(10px, -2px);
         padding: 12px 0px 12px 10px;
     }
 }
-/* Media Header en dessous de 480px */
-@media screen and (max-width: 480px) {
-   
-}
