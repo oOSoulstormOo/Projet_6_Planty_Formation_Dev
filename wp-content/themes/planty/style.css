@@ -16,9 +16,19 @@ Version: 1.0
     margin-left: 37px;
 }
 
+#site-logo #site-logo-inner a:hover img {
+    opacity: 1;
+    -moz-opacity: 1;
+}
+
 /* Lien de navigation */
-#menu-principal #menu-item-35 {
-    margin-right: 75px;
+#menu-principal {
+    display: flex;
+}
+
+#menu-principal-1{
+    display: flex;
+    flex-direction: column;
 }
 
 #site-navigation-wrap .dropdown-menu >li >a {
@@ -37,6 +47,10 @@ Version: 1.0
 }
 
 /* Lien "nous rencontrer" */
+#menu-principal #menu-item-35 {
+    margin-right: 75px;
+}
+
 #menu-principal #menu-item-35 .menu-link {
     display: inline-block;
     position: relative;
@@ -74,6 +88,7 @@ transform: translate(10px, -2px);
 
 #menu-principal #menu-item-34 {
     background-color: #DC9F96;
+    order: 3;
 }
 
 #menu-principal #menu-item-34:hover {
@@ -130,6 +145,7 @@ transform: translate(10px, -2px);
 
     #mobile-dropdown ul .menu-item-34 {
         border-bottom: none !important;
+        order: 3;
     }
 
 
