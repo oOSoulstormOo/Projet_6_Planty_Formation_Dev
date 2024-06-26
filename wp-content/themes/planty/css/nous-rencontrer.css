@@ -68,14 +68,18 @@
         width: 310px;
         margin-top: 40px !important;
     }
+
+    .wp-block-uagb-container .contenair-background-section-1,
+    .wp-block-uagb-container .contenair-background-section-2 {
+        background-image: none;
+    }
 }
 
 /* Formulaire sur mobile */
 @media only screen and (max-width:480px) {
     .wp-block-uagb-container .container-background-form {
         width: 320px !important;
-        background-size: 110px !important;
-        background-position: 0% 76% !important;
+        background-image: none !important;
     }
     .wp-block-uagb-container .container-form {
         width: 220px !important;
