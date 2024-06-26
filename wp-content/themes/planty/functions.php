@@ -36,22 +36,12 @@ add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
 // admin link 
 
-add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
 function add_admin_link($items, $args)
 {
-    if (is_user_logged_in()) {
+    if (is_user_logged_in() && $args->theme_location == 'main_menu' || $args->theme_location == 'mobile_menu') {
 		
-		// Placer dan sle menu Principal
-		$args->theme_location == 'Principal';
-
         // Créez le lien "Admin"
-        $admin_link = '<li class="admin-link"><a href="' . admin_url() . '" class="menu-link"><span class="text-wrap">Admin</span></a></li>';
-
-        // Trouvez la position du lien "Nous rencontrer"
-        $meet_us_position = strpos($items, 'Nous rencontrer');
-
-        // Insérez le lien "Admin" juste après le lien "Nous rencontrer"
-        $items = substr_replace($items, $admin_link, $meet_us_position + strlen('Nous rencontrer'), 0);
-    }
+        $items .= '<li class="admin-link"><a href="' . admin_url() . '" class="menu-link"><span class="text-wrap">Admin</span></a></li>'; }
     return $items;
 }
+add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);

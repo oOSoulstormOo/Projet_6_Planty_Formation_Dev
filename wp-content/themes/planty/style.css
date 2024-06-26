@@ -94,9 +94,19 @@ transform: translate(10px, -2px);
 }
 
 /** FOOTER **/
+/* Menu footer */
+.menu-menu-footer-container {
+    text-align: center;
+}
+
 /* ici on enlève la bordure sur le lien du footer au moment du clique */
-#copyright a {
+.menu-menu-footer-container a {
     outline: none !important;
+}
+
+#footer #footer-bottom #footer-bottom-menu {
+    width: 100%;
+    padding-left: 0 !important;
     font-size: 16px;
 }
 
