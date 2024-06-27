@@ -1,6 +1,6 @@
-/****----------------------------------------****/
+/****----------------------------------****/
 /**** Style CSS de la page "Commander" ****/
-/****----------------------------------------****/
+/****----------------------------------****/
 
 /*** FORMULAIRE DE COMMANDE ***/
 
@@ -14,6 +14,7 @@
     font-weight: 600;
     margin-bottom: 0px;
 }
+
 /* conteneur des quantités */
 .container-number {
     display: flex;
@@ -32,7 +33,7 @@
     justify-content: center;
 }
 
-.container-number .number-command input[type="text"] {
+.container-number .number-command input[type="number"] {
     width: 39px;
     height: 56px;
     background-color: white;
@@ -41,6 +42,27 @@
     font-size: 16px;
     font-family: 'Inter';
     text-align: center;
+    padding: 0;
+}
+
+/* On enlève les flèches dans les inputs de type "number" */
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+ 
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin:0;
+}
+ 
+/* Opéra*/
+input::-o-inner-spin-button,
+input::-o-outer-spin-button { 
+	-o-appearance: none;
+	margin:0
 }
 
 /* conteneur des infos général et de livraison */
