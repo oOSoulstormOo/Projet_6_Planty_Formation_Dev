@@ -162,3 +162,11 @@ transform: translate(10px, -2px);
         padding: 12px 0px 12px 10px;
     }
 }
+
+/* Footer Responsive */
+@media only screen and (max-width: 959px) {
+
+    #footer-bottom #footer-bottom-menu {
+    margin-bottom: 0px !important;
+    }
+}
